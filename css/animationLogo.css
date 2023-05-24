@@ -1,1 +1,20 @@
 
+img {
+    height: 200px;
+    width: 200px;
+    animation-name: logoAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+@keyframes logoAnimation{
+    0% {}
+    50% {transform: rotate(180deg); border-radius: 100%;
+        filter: sepia();}
+    100% {transform: rotate(360deg);}
+}
